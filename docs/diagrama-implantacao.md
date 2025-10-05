@@ -12,11 +12,11 @@ flowchart TB
   DB[(Banco de Dados - RDS)]
   STORAGE[(Armazenamento S3)]
   MON[Monitoramento / Logs]
-```
+
 
   User --> CDN --> LB --> WEB
   WEB --> CACHE
   WEB --> DB
   WEB --> STORAGE
   WEB --> MON
-  
+  ```
