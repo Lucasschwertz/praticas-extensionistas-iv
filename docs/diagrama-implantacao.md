@@ -18,3 +18,4 @@ flowchart TB
   WEB --> DB
   WEB --> STORAGE
   WEB --> MON
+  ```
