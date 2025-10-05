@@ -4,14 +4,14 @@ O diagrama de arquitetura DevOps representa o **pipeline de integração e entre
 
 ```mermaid
 flowchart LR
-  Dev[👨‍💻 Desenvolvedor]
-  GH[📦 Repositório GitHub]
-  CI[⚙️ Pipeline CI (GitHub Actions)]
-  TEST[🧪 Testes Automatizados]
-  BUILD[🏗️ Build e Criação de Imagem]
-  REG[🗂️ Registro de Imagens (Container Registry)]
-  CD[🚀 Pipeline CD (Deploy Automático)]
-  CLOUD[☁️ Ambiente Cloud (AWS)]
-  OBS[📈 Observabilidade (Logs / Métricas)]
+  Dev[Desenvolvedor]
+  GH[Repositorio GitHub]
+  CI[Pipeline CI - GitHub Actions]
+  TEST[Testes Automatizados]
+  BUILD[Build e Criacao de Imagem]
+  REG[Registro de Imagens - Container Registry]
+  CD[Pipeline CD - Deploy Automatico]
+  CLOUD[Ambiente Cloud - AWS]
+  OBS[Observabilidade - Logs e Metricas]
 
   Dev --> GH --> CI --> TEST --> BUILD --> REG --> CD --> CLOUD --> OBS
