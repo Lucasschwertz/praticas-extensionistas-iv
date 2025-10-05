@@ -31,13 +31,3 @@ flowchart LR
   Repo --> DB
   Api --> ERP
   Api --> Ext
-
-Descrição:
-
-O pacote Apresentação cuida da interação com o usuário.
-
-O pacote Aplicação concentra a lógica de negócio.
-
-O pacote Integração trata da comunicação com sistemas externos.
-
-O pacote Dados é responsável pela persistência e acesso ao banco.

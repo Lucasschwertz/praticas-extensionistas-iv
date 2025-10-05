@@ -18,20 +18,3 @@ flowchart TB
   WEB --> DB
   WEB --> STORAGE
   WEB --> MON
-
-
-Descrição:
-
-O usuário acessa o sistema via navegador ou aplicativo.
-
-A requisição passa por uma CDN e por um Load Balancer que distribui o tráfego.
-
-O servidor web/container processa as requisições.
-
-O banco de dados armazena informações persistentes.
-
-O cache otimiza o desempenho das consultas.
-
-O armazenamento guarda arquivos e mídias.
-
-O monitoramento registra logs, métricas e alertas do ambiente.

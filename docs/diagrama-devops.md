@@ -15,18 +15,3 @@ flowchart LR
   OBS[📈 Observabilidade (Logs / Métricas)]
 
   Dev --> GH --> CI --> TEST --> BUILD --> REG --> CD --> CLOUD --> OBS
-
-
-Descrição:
-
-O desenvolvedor envia o código para o GitHub.
-
-O GitHub Actions (CI) é acionado automaticamente.
-
-São executados testes automatizados e validações de segurança.
-
-O sistema gera o build e publica a imagem no registro de containers.
-
-O pipeline de CD faz o deploy na infraestrutura cloud (AWS).
-
-O ambiente é monitorado continuamente via logs, métricas e alertas.
