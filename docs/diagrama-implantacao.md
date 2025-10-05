@@ -4,14 +4,14 @@ O diagrama de implantação representa os componentes físicos e lógicos da apl
 
 ```mermaid
 flowchart TB
-  User[Usuario (Navegador / App Mobile)]
-  CDN[CDN / CloudFront]
+  User[Usuario - Navegador ou App Mobile]
+  CDN[CDN - CloudFront]
   LB[Load Balancer]
-  WEB[Servidor Web / Container (App)]
+  WEB[Servidor Web ou Container App]
   CACHE[(Cache Redis)]
   DB[(Banco de Dados - RDS)]
   STORAGE[(Armazenamento S3)]
-  MON[Monitoramento / Logs]
+  MON[Monitoramento e Logs]
 
   User --> CDN --> LB --> WEB
   WEB --> CACHE
