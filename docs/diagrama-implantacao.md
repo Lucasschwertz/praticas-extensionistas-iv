@@ -2,7 +2,7 @@
 
 O diagrama de implantação representa os componentes físicos e lógicos da aplicação: servidores, banco de dados, rede, armazenamento e monitoramento. Ele mostra **como o sistema é distribuído na infraestrutura em nuvem**.
 
-```mermaid```
+```mermaid
 flowchart TB
   User[Usuário (Navegador / App Mobile)]
   CDN[CDN / CloudFront]
@@ -19,4 +19,4 @@ flowchart TB
   WEB --> DB
   WEB --> STORAGE
   WEB --> MON
-  ```
+```
