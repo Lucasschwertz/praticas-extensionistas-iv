@@ -5,49 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App Mobile ERP</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
+
 <body>
 
+<!-- SPLASH SCREEN -->
+<div id="splash">
+    <h1 class="splash-title">ERP Cloud</h1>
+</div>
+
 <header class="topbar">
-    <h1>App Mobile</h1>
+    <h1>Mobile ERP</h1>
 </header>
 
-<main>
+<main id="conteudo">
 
-    <section class="card">
+    <!-- SKELETON LOADING -->
+    <section class="card skeleton">
+        <div class="skeleton-line w80"></div>
+        <div class="skeleton-line w60"></div>
+        <div class="skeleton-line w40"></div>
+    </section>
+
+    <!-- CONTEÚDO REAL -->
+    <section class="card hidden fade-in">
         <h2>Versão Mobile</h2>
-        <p>Interface adaptada para telas pequenas, estilo ERP.</p>
+        <p>Interface moderna adaptada para telas pequenas.</p>
     </section>
 
-    <section class="menu">
-        <button class="btn">Perfil</button>
-        <button class="btn">Notificações</button>
-        <button class="btn">Configurações</button>
-        <button class="btn">Ajuda</button>
+    <section class="menu hidden fade-in">
+        <button class="btn"><i data-feather="user"></i> Perfil</button>
+        <button class="btn"><i data-feather="bell"></i> Notificações</button>
+        <button class="btn"><i data-feather="settings"></i> Configurações</button>
+        <button class="btn"><i data-feather="help-circle"></i> Ajuda</button>
     </section>
 
-    <section class="card">
+    <section class="card hidden fade-in">
         <h2>Status</h2>
         <ul class="status">
-            <li><strong>API:</strong> Online</li>
-            <li><strong>Versão:</strong> 1.0.0</li>
-            <li><strong>Atualizado em:</strong> Hoje</li>
+            <li><span>API</span><strong id="apiStatus" class="pulse">Checando...</strong></li>
+            <li><span>Versão</span><span>1.0.0</span></li>
+            <li><span>Atualizado</span><span>Hoje</span></li>
         </ul>
     </section>
 
-    <section class="card">
+    <section class="card hidden fade-in">
         <h2>API Conectada</h2>
-        <button id="btnApi" class="btn">Chamar API</button>
-        <p id="resultadoApi"></p>
+        <pre id="resultadoApi" class="resultado"></pre>
     </section>
+    
+    <!-- BOTÃO FLUTUANTE -->
+<button id="btnApi" class="fab">
+    <i data-feather="cloud"></i>
+</button>
 
 </main>
+
 
 <footer class="footer">
     <p>© 2025 – App Mobile ERP</p>
 </footer>
 
 <script src="script.js"></script>
+<script>feather.replace()</script>
 
 </body>
 </html>

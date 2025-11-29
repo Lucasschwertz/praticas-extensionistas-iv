@@ -1,61 +1,262 @@
+/* -------------------- */
+/* ESTILO GERAL PREMIUM */
+/* -------------------- */
+
 body {
     margin: 0;
-    background: #f2f3f5;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    background: #0f1217;
+    font-family: "Inter", sans-serif;
+    color: #e6e6e6;
 }
 
-/* Barra superior */
 .topbar {
-    background: #1d3557;
+    background: #171b22;
     padding: 18px;
     text-align: center;
-    color: white;
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid #222831;
 }
 
-/* Conteúdo */
-main {
-    padding: 15px;
-}
-
-/* Cards ERP */
 .card {
-    background: white;
-    padding: 18px;
-    margin-bottom: 18px;
-    border-radius: 10px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
-    border: 1px solid #dadada;
+    background: #171b22;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+    border: 1px solid #222831;
 }
 
-/* Botões ERP */
+h2 {
+    margin-top: 0;
+    color: #c6d4ff;
+}
+
+/* ---------------------- */
+/* BOTÕES DO MENU MOBILE  */
+/* ---------------------- */
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding: 0 15px;
+}
+
 .btn {
-    background: white;
-    color: #1d3557;
-    border: 1px solid #d1d5da;
-    padding: 12px;
-    width: 100%;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-bottom: 12px;
+    background: #1f232b;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    color: #dfe6ff;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background: #e6f0ff;
-    border-color: #3f8cff;
+    background: #262b35;
+    transform: scale(1.03);
 }
 
-/* Listas informativas */
+/* -------------------- */
+/* STATUS + PULSE       */
+/* -------------------- */
+
+.status {
+    list-style-type: none;
+    padding: 0;
+}
+
 .status li {
-    padding: 6px 0;
-    border-bottom: 1px solid #e3e3e3;
-    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #222831;
 }
 
-.footer {
-    text-align: center;
+.pulse {
+    animation: pulseAnim 1.5s infinite;
+    color: #7cb97c;
+}
+
+@keyframes pulseAnim {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+}
+
+/* -------------------- */
+/* BOTÃO FLUTUANTE (FAB) */
+/* -------------------- */
+
+.fab {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #5670ff, #52c4fc);
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.fab:hover {
+    transform: scale(1.1);
+}
+
+/* -------------------- */
+/* RESULTADO DA API     */
+/* -------------------- */
+
+.resultado {
+    background: #0d0f14;
+    padding: 15px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    font-size: 13px;
+    border: 1px solid #1d222c;
+}
+
+/* -------------------- */
+/* SKELETON LOADING     */
+/* -------------------- */
+
+.skeleton {
+    animation: fade 0.6s ease forwards;
+}
+
+.skeleton-line {
+    height: 14px;
+    background: #2a2f39;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.w80 { width: 80%; }
+.w60 { width: 60%; }
+.w40 { width: 40%; }
+
+/* -------------------- */
+/* FADE-IN APÓS LOAD    */
+/* -------------------- */
+
+.hidden { display: none; }
+
+.fade-in {
+    animation: appear 0.8s ease forwards;
+}
+
+@keyframes appear {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ------------------ */
+/* SPLASH SCREEN      */
+/* ------------------ */
+
+#splash {
+    position: fixed;
+    background: linear-gradient(135deg,#242a36,#0f1217);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.splash-title {
+    font-size: 32px;
+    color: #a9c0ff;
+    animation: splashZoom 1.5s ease-out forwards;
+}
+
+@keyframes splashZoom {
+    0% { opacity: 0; transform: scale(0.7); }
+    100% { opacity: 1; transform: scale(1); }
+}
+/* ======================================= */
+/*  MELHORIAS DE LAYOUT — VERSÃO PREMIUM   */
+/* ======================================= */
+
+main {
+    max-width: 520px;   /* largura ideal de app mobile */
+    margin: auto;       /* centraliza tudo */
+    padding-bottom: 100px;
+}
+
+/* Cards mais soltos e equilibrados */
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 92%;
+}
+
+/* Menu mais moderno */
+.menu {
+    width: 92%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.menu .btn {
     padding: 12px;
     font-size: 14px;
-    color: #666;
+}
+
+/* Status mais organizado */
+.status li span:first-child {
+    opacity: 0.7;
+}
+
+/* API Conectada */
+.resultado {
+    width: 92%;
+    margin: auto;
+    margin-top: 8px;
+}
+
+/* FAB mais discreto e elegante */
+.fab {
+    width: 54px;
+    height: 54px;
+    bottom: 25px;
+    right: 25px;
+    box-shadow: 0 5px 14px rgba(0,0,0,0.32);
+}
+
+/* Em telas grandes (notebook) */
+@media (min-width: 768px) {
+    body {
+        background: #0d1014;
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        margin-top: 20px;
+        transform: scale(0.95);
+    }
+
+    .topbar {
+        display: none; /* opcional: tira a barra gigante ao testar no PC */
+    }
+
+    #splash {
+        transform: scale(0.85);
+    }
 }
