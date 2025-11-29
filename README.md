@@ -53,3 +53,41 @@ praticas-extensionistas-iv/
 ---
 
 © 2025 – Lucas Schwertz | UNOESC
+
+cat << 'EOF' > README.md
+# 📘 PRÁTICAS EXTENSIONISTAS IV – MVP Completo  
+### Lucas Schwertz – UNOESC – ADS
+
+## 🚀 Visão Geral  
+Este projeto integra a entrega final da disciplina **Práticas Extensionistas IV**, envolvendo:  
+- Aplicação Web responsiva  
+- Versão mobile (PWA)  
+- API hospedada na cloud  
+- Documentação da infraestrutura  
+- Integração completa entre as partes
+
+---
+
+## 🌐 **URL da Aplicação Web**
+Disponível em:  
+🔗 *(adicione aqui o link da versão web se estiver publicada)*
+
+---
+
+## 📱 **Versão Mobile (PWA)**  
+A aplicação web funciona também como **PWA**, permitindo:  
+- Instalação no celular  
+- Navegação responsiva  
+- Ícone próprio  
+- Uso offline básico
+
+---
+
+## 🧩 **API Cloud – Flask + Gunicorn (Render)**  
+A API está hospedada na Render e funciona como backend do MVP.
+
+### **URL da API (ativa):**  
+🔗 https://praticas-api.onrender.com
+
+### Exemplos de rotas:
+**GET /**
