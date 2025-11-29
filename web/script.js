@@ -1,15 +1,26 @@
-document.getElementById("btn-api").addEventListener("click", async () => {
+// URL da API hospedada no Render
+const API_BASE = "https://praticas-api.onrender.com";
 
-    const resBox = document.getElementById("resultado");
-    resBox.innerText = "Conectando ao servidor...";
+// Elementos da interface
+const btnApi = document.getElementById("btn-api");
+const resultado = document.getElementById("resultado");
+
+// Evento de clique no botão
+btnApi.addEventListener("click", async () => {
+    resultado.textContent = "Consultando a API...";
 
     try {
-        const resposta = await fetch("https://praticas-extensionistas-iv.onrender.com/dados");
-        const dados = await resposta.json();
+        const resp = await fetch(API_BASE + "/dados");
+        
+        if (!resp.ok) {
+            resultado.textContent = "Erro: API retornou status " + resp.status;
+            return;
+        }
 
-        resBox.innerText = "Resposta da API: " + dados.mensagem;
+        const data = await resp.json();
+        resultado.textContent = JSON.stringify(data, null, 2);
 
-    } catch (err) {
-        resBox.innerText = "A API demorou ou está acordando no Render...";
+    } catch (erro) {
+        resultado.textContent = "Erro ao conectar com a API: " + erro;
     }
 });
