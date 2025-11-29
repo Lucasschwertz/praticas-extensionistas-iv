@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Web ERP – MVP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+    <h1>Sistema Web – MVP ERP</h1>
+</header>
+
+<main>
+
+    <!-- CARD PRINCIPAL -->
+    <section class="card">
+        <h2>Informações Gerais</h2>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>Usuário:</label>
+                <input type="text" value="Lucas Schwertz">
+            </div>
+
+            <div class="form-group">
+                <label>Setor:</label>
+                <input type="text" value="TI / Sistemas">
+            </div>
+
+            <div class="form-group">
+                <label>Status:</label>
+                <select>
+                    <option>Ativo</option>
+                    <option>Inativo</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- TABELA ERP -->
+    <section class="card">
+        <h2>Últimas Ações Registradas</h2>
+
+        <table class="erp-table">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Ação</th>
+                    <th>Responsável</th>
+                    <th>Situação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>05/10/2025</td>
+                    <td>Login no Sistema</td>
+                    <td>Lucas</td>
+                    <td>OK</td>
+                </tr>
+                <tr>
+                    <td>05/10/2025</td>
+                    <td>Consulta API</td>
+                    <td>Lucas</td>
+                    <td>Sucesso</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- API -->
+    <section class="card">
+        <h2>Integração com API Cloud</h2>
+        <button id="btn-api" class="btn-primary">Chamar API</button>
+        <p id="resultado"></p>
+    </section>
+
+</main>
+
+<footer class="footer">
+    © 2025 – Sistema ERP MVP
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

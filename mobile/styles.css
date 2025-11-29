@@ -1,34 +1,61 @@
 body {
     margin: 0;
-    background: #f7f7f7;
+    background: #f2f3f5;
     font-family: Arial, sans-serif;
 }
 
-header {
-    background: #0080ff;
-    padding: 15px;
+/* Barra superior */
+.topbar {
+    background: #1d3557;
+    padding: 18px;
     text-align: center;
     color: white;
+    font-size: 22px;
 }
 
+/* Conteúdo */
 main {
     padding: 15px;
 }
 
+/* Cards ERP */
 .card {
     background: white;
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 8px #ccc;
+    padding: 18px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+    border: 1px solid #dadada;
 }
 
-button {
-    background: #0080ff;
-    color: white;
-    padding: 10px;
+/* Botões ERP */
+.btn {
+    background: white;
+    color: #1d3557;
+    border: 1px solid #d1d5da;
+    padding: 12px;
     width: 100%;
-    border: none;
     border-radius: 6px;
-    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.btn:hover {
+    background: #e6f0ff;
+    border-color: #3f8cff;
+}
+
+/* Listas informativas */
+.status li {
+    padding: 6px 0;
+    border-bottom: 1px solid #e3e3e3;
+    list-style: none;
+}
+
+.footer {
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+    color: #666;
 }

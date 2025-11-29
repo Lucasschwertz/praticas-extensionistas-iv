@@ -1,0 +1,116 @@
+/* Fundo ERP */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f3f5;
+    color: #333;
+}
+
+/* Topo */
+.topbar {
+    background: #1d3557;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+}
+
+/* Conteúdo */
+main {
+    padding: 25px;
+}
+
+/* Cards corporativos */
+.card {
+    background: #ffffff;
+    padding: 22px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+/* Formulários estilo ERP */
+.form-row {
+    display: flex;
+    gap: 18px;
+    margin-top: 12px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #555;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+input:focus, select:focus {
+    background: #ffffff;
+    border-color: #3f8cff;
+    outline: none;
+}
+
+/* Tabela ERP */
+.erp-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+}
+
+.erp-table th {
+    background: #eef1f5;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #d1d5da;
+}
+
+.erp-table td {
+    padding: 10px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.erp-table tr:hover {
+    background: #f8fbff;
+}
+
+/* Botão principal */
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5da;
+    background: white;
+    border-radius: 6px;
+    color: #1d3557;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background: #e6f0ff;
+    border-color: #3f8cff;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #666;
+}

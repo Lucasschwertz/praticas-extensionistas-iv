@@ -1,9 +1,15 @@
-document.getElementById("btnApi").addEventListener("click", async () => {
+document.getElementById("btn-api").addEventListener("click", async () => {
+
+    const resBox = document.getElementById("resultado");
+    resBox.innerText = "Conectando ao servidor...";
+
     try {
         const resposta = await fetch("https://praticas-extensionistas-iv.onrender.com/dados");
         const dados = await resposta.json();
-        document.getElementById("resultadoApi").innerText = "API retornou: " + dados.mensagem;
+
+        resBox.innerText = "Resposta da API: " + dados.mensagem;
+
     } catch (err) {
-        document.getElementById("resultadoApi").innerText = "Erro ao chamar API";
+        resBox.innerText = "A API demorou ou está acordando no Render...";
     }
 });
