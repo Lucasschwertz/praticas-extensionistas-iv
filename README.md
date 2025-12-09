@@ -1,5 +1,4 @@
-# PRÁTICAS EXTENSIONISTAS IV – Entrega Parcial (Peso 3,0)
-
+# PRÁTICAS EXTENSIONISTAS IV – Entrega Parcial
 **Aluno:** Lucas Schwertz  
 **Curso:** Análise e Desenvolvimento de Sistemas – Fase 4  
 **Turma:** EAD54-12  
