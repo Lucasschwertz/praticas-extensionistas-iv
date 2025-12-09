@@ -54,7 +54,7 @@ praticas-extensionistas-iv/
 
 © 2025 – Lucas Schwertz | UNOESC
 
-cat << 'EOF' > README.md
+
 # 📘 PRÁTICAS EXTENSIONISTAS IV – MVP Completo  
 ### Lucas Schwertz – UNOESC – ADS
 
@@ -70,7 +70,7 @@ Este projeto integra a entrega final da disciplina **Práticas Extensionistas IV
 
 ## 🌐 **URL da Aplicação Web**
 Disponível em:  
-🔗 *(adicione aqui o link da versão web se estiver publicada)*
+🔗 file:///C:/An%C3%A1lise%20e%20Desenvolvimento%20de%20Sistemas/Fase%204/PR%C3%81TICAS%20EXTENSIONISTAS%20IV%20-%20EAD54-12/praticas-extensionistas-iv/web/index.html
 
 ---
 
